@@ -1,0 +1,139 @@
+.main-footer {
+    color: #666666;
+    padding: 30px 0;
+}
+
+.main-footer__item {
+    border-top: 1px solid #666666;
+    /* max-width: 210px; */
+    margin: 30px 0;
+}
+
+.main-footer__title {
+    font-size: 16px;
+    font-weight: 800;
+    padding: 20px 0 30px 0;
+}
+
+.quick-links-list__item {
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 0.5px solid #d4d4d4;
+    padding: 8px 0 10px 0;
+}
+.quick-links-list__item::before {
+    content: "»";
+    padding-right: 10px;
+}
+
+.quick-links-list__link {
+    text-decoration: none;
+    color: #666666;
+    padding: 8px 0 10px 0;
+
+}
+.post {
+    padding-bottom: 38px;;
+}
+.post::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.main-footer__tweet {
+    padding-bottom: 25px;
+    margin: 0;
+    line-height: 19px;
+}
+.post__link {
+    float: right;
+}
+
+
+.post__title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.post__text {
+    padding: 16px 0;
+    margin: 0;
+}
+
+
+.post__author {
+    display: inline;
+    font-size: 10px;
+}
+
+
+
+.contact-form__input {
+    outline: none;
+    background-color: #f2f2f2;
+    Border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /* height: 30px; */
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+    color: #989898;
+}
+.contact-form__input:focus {
+    box-shadow: 0 0 3px 2px #ee802f;
+}
+.contact-form__message {
+    resize:none;
+    /* height: 110px; */
+    padding: 5px 10px calc(110px - 5px - 13px); /*Или calc(110px - 5px - 32px)*/
+}
+.contact-form__btn {
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    Border: none;
+}
+.contact-form__btn:focus {
+    /* border: 1px solid #ee802f; */
+    box-shadow: 0 0 3px 2px #ee802f;
+}
+
+.contact-form__red-btn {
+    color: #ba2e1f;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    height: 30px;
+    width: 80px;
+}
+
+.contact-form__red-btn:hover {
+    color: #ee802f;
+}
+
+
+/* ------------------------- */
+.page-footer__copyright {
+    background-color: #f2f2f2;
+    color: #919191;
+    padding: 25px 0;
+    text-align: center;
+} 
+.pf-copyright-container {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    display: flex;
+}
+.copyright {
+    margin-right: auto;
+}
+.Template-name {
+    text-decoration: none;
+    color: #919191;
+    margin: auto 0;
+}

@@ -1,0 +1,92 @@
+.footer-links_container {
+    padding: 130px 0 90px 0;
+}
+
+.footer-links__col {
+    margin-bottom: 80px;
+}
+
+.footer-links__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links__title {
+    padding-bottom: 20px;
+}
+
+.form__title {
+    margin-bottom: 20px;
+}
+
+.form__txt {
+    margin-bottom: 60px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+.form__mail {
+    padding: 25px 10px;
+
+}
+
+
+/* COPIRITE */
+.container__copyrite {
+    padding: 30px 0;
+}
+
+.copyrite__txt {
+    line-height: 50px;
+    margin: 0 0 0 20px;
+}
+
+.copyrite__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+.copyrite__item {
+    margin-right: 40px;
+}
+.copyrite__list:last-child .copyrite__item:last-child {
+    margin-right: 0;
+}
+.copyrite__link {
+    
+}
+.copyrite__img {
+    height: 29px;
+    width: 28px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.copyrite__google {
+    background: url("../assets/icons/sosial/sossprite.png") -215px 0px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.copirite__link:hover {
+    transform: scale(3.3);
+
+}
+
+/* MEDIA */
+@media (max-width:767px) {
+    .copyrite__txt {
+        text-align: center;
+    }
+    .copyrite__list {
+        justify-content: center;
+    }
+    .box_center {
+        display: flex;
+        justify-content: center;
+    }
+}

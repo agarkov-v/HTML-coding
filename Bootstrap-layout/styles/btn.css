@@ -1,0 +1,127 @@
+.hamburger {
+    display: none;
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-right: 0;
+    color: #ffffff;
+    height: 22px;
+    width: 25px;
+    position: relative;
+    background-color: transparent;
+    margin-left: 30px;
+}
+.hamburger::after,
+.hamburger::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-color: currentColor;
+    transition: all .5s;
+}
+.hamburger:hover {
+    border-color: transparent;
+}
+.hamburger:hover::after {
+    transform: rotate(45deg);
+}
+.hamburger:hover::before {
+    transform: rotate(-45deg);
+}
+.hamburger:focus {
+    border-color: transparent;
+}
+.hamburger:focus::before {
+    transform: rotate(-45deg);
+}
+.hamburger:focus::after {
+    transform: rotate(45deg);
+}
+@media (max-width:767px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.btn_primaty {
+    border: 1px solid #ffffff;
+    height: 50px;
+    padding: 0px 40px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 0.4s linear;
+    /* line-height: 15px; */
+}
+.btn_primaty:hover {
+    background-color: #00fff0;
+    color: #1c5565;
+    border: none;
+
+}
+
+.btn_secondary {
+    /* border: 1px solid #1c5565;  */
+    border: none;
+    background-color: #00fff0;
+    box-shadow: 0px 8px 24px 0px #00fff0;
+    color: #1c5565;
+    font-size: 17px;
+}
+.btn_secondary:hover {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff
+}
+
+.btn_rounded {
+    /* height: 40px; */
+    padding: 0px 29px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+}
+.btn_contrast:hover {
+    border: 1px solid #00fff0;
+    color: #1c5565;
+}
+
+.btn_play {
+    height: 75px; 
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+.fa-play {
+    padding: 0;
+    color: #1c5565;
+}
+.btn_play:hover .fa-play {
+    color: #ffffff;
+}
+
+.btn_big {
+    height: 70px;
+    padding: 0 115px;
+}
+
+.btn_indent {
+    margin-right: 25px;
+}
+
+@media (max-width:500px) {
+    .btn_big {
+        padding: 0 62px;
+    }
+    .btn_rounded {
+        padding: 0 5px;
+    }
+}
+
+

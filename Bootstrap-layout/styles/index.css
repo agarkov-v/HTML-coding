@@ -1,0 +1,28 @@
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+@import "./btn.css";
+@import "./txt.css";
+
+body {
+    font: 14px Dosis, Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+}
+html {
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: #00fff1;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 0;
+}
+
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

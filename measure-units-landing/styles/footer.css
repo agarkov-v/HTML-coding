@@ -1,0 +1,67 @@
+/* footer-links */
+.footer-links {
+    background-color: #131316;
+    padding-top: 1.625rem;
+}
+
+.footer-links__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links__copyright {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.footer-links__copyright_yellow {
+    color: #ffe600;
+}
+
+.footer-links__list {
+    margin-bottom: 2rem;
+    display: flex;
+    /* position: relative; */
+}
+
+.footer-links__item {
+    margin-right: 1rem;  
+}
+.footer-links__list .footer-links__item:last-child {
+    margin-right: 0;
+}
+
+
+.footer-links__link {
+    
+}
+
+.footer-links__img {
+    background: url("../assets/ico/sosial-sprite.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.footer-links__img:hover {
+    transform: scale(1.1);
+}
+
+.footer-links__facebook {
+    background-position: 11px 0px;
+}
+.footer-links__dribble {
+    background-position: -29px 0px;
+
+}
+.footer-links__twitter {
+    background-position: -65px 0px;
+
+}
+.footer-links__google {
+    background-position: -101px 0px;
+
+}

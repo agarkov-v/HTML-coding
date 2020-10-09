@@ -1,0 +1,78 @@
+@import "./styles/btn.css";
+@import "./styles/header.css";
+@import "./styles/main.css";
+@import "./styles/footer.css";
+
+
+
+html {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.container {
+    width: 1170px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.txt_main {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #707070;
+    line-height: 1.5625rem;
+    text-align: center;
+}
+.txt_main_signature {
+    width: 60rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.75rem;
+}
+.txt_main_left {
+    text-align: left;
+}
+.txt_main_justify {
+    text-align: justify;
+}
+.txt_main_white {
+    color: #ffffff;
+}
+
+.txt_title {
+    font-weight: 700;
+    font-size: 1.875em;
+    align-self: center;
+    text-align: center;
+}
+.txt_title_yellow {
+    color: #ffe600;
+}
+.txt_title_white {
+    color: #ffffff;
+}
+
+.link-active::after {
+    content: '';
+    border-bottom: 3px solid #ffe600;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    transition: 0.7s ease-out;
+}
+.link-active:focus::after, .link-active:hover::after {
+    width: 100%; 
+}
+.link-active:focus, .link-active:hover {
+    color: #ffe600;
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 14px;
+    }
+}

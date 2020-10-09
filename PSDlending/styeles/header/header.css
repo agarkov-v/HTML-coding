@@ -1,0 +1,242 @@
+.header-wrapper {
+    background-color:#ba2e1f;
+    padding: 13px 0;
+
+}
+
+.filter {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter__item:not(:last-child){
+    border-right: 1px solid #fff;
+}
+.filter__link{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 3px;
+    text-align: center;
+    padding: 20% 10px;
+}
+
+.filter__item:first-child .filter__link{
+    padding-left: 0;
+}
+
+
+
+.search-form {
+    display: inline-flex;
+    margin-left: auto;
+}
+.search {
+    max-width: 210px;
+    height: 25px;
+    position: relative;
+}
+.search__input, .search__button {
+    border: none;
+}
+.search__input {
+    width: 100%;
+    padding: 5px 37px 5px 15px;
+    border-radius: 20px;
+    outline: none;
+    /* box-sizing: border-box; */
+}
+.search__button {
+    position: absolute;
+    background-color: #ba2e1f;
+    top: 3px;
+    right: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("../../assets/icons/search.svg");
+    background-size: 10px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+}
+.search__button:hover {
+    background-color: #ee802f;
+    transition: 0.4s linear;
+}
+
+/* ------------------------------ */
+
+.site-name__logo {
+    font-size: 36px; 
+    margin:35px 0 28px 0;
+    font-weight: normal;
+}
+.site-name__logo::first-letter {
+    font-size: 48px;
+}
+
+.site-name__description {
+    margin:0 0 17px 0;
+}
+
+
+
+.header-navbar-list {
+    list-style: none;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+}   
+.header-navbar-list__item {
+    width:30px;
+    height:30px;
+    display: block;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.header-navbar-list__item:last-of-type {
+    margin-right: 0px;
+}
+
+.header-navbar-list__link{
+    border-radius: 50%;
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.header-navbar-list__link:hover{
+    background-color: #ee802f;
+    transform: scale(1.3);
+}
+
+
+.nav-menu {
+    width: 100%;
+    padding: 0 55px;
+    background-color: #333333;
+    cursor: pointer;
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    padding: 0;
+
+}
+
+.nav-menu::after{ /*псевдораспорка */
+    content: '';
+    clear:both;
+    display: block;
+}
+.nav-menu__item {
+    display: block;
+    /* width: calc(12.5% - 3px); */
+    float: left;
+}
+.nav-menu__link {
+    color: #fff;
+    display: inline-block;
+    /* width: 100%; */
+    padding: 0 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-menu__item:first-child .nav-menu__link {
+    margin-left: 56px;
+}
+.nav-menu__item:last-child .nav-menu__link {
+    margin-right: 54px;
+}
+
+/* --------------------------- */
+
+.navbar-btn {
+    border: 2px solid currentColor;
+    border-right: 0;
+    border-left: 0;
+    color: #ee802f;
+    /* display: block; */
+    height: 20px;
+    width: 30px;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 50px auto;
+    display: none;
+}
+.navbar-btn:focus {
+    outline: none;
+}
+.navbar-btn::after,
+.navbar-btn::before{
+    transition: all .5s;
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-color: currentColor;
+}
+.navbar-btn:hover{
+    border-color: transparent;
+}
+.navbar-btn:hover::after{
+    transform: rotate(45deg);
+}
+
+.navbar-btn:hover::before{
+    transform: rotate(-45deg);
+}
+
+
+/* --------------------------- */
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes pulse {
+    0%{
+        ransform: scale(1) rotate(0deg);
+    }
+    50%{ 
+        transform: scale(1.2) rotate(180deg);
+        }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+        
+}
+.pulse2 {
+    animation-name: pulse2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse2 {
+    50%{ 
+        background-color: #ee802f;
+        }    
+}
+

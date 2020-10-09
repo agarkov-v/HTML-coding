@@ -1,0 +1,114 @@
+.btn{
+    background-color: #ffe600;
+    line-height: 1.68rem;
+    padding: 1rem 2.95rem;
+    transition: 0.5s ease-out;
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    display: block;
+}
+.btn:hover, .btn:focus {
+    background-color: rgba(255,225,0,0.5);
+    outline: none; 
+    box-shadow: 0px 0px 24px 1px rgba(255,242,128,0.5);
+    /* border-radius: 5px; */
+}
+
+.btn_primary {
+    color: #131316;
+}
+
+.btn_secondary {
+    color: #fff;
+}
+.btn_small {
+    font-size: 0.9375rem;
+}
+
+.btn_arrow {
+    padding: 1.282rem 1.25rem;
+    line-height: 0;
+}
+/* .btn_arrow_top {
+    padding: 0.938rem 1.25rem;
+    line-height: 0;
+} */
+
+.btn_arrow_sideway {
+    padding: 0.625rem;
+    line-height: 0;
+    margin: 0;
+} 
+
+.btn_close {
+    color: #ffe600;
+    font-size: 1rem;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    margin-bottom: 2.1875rem;
+}
+.btn_close:hover, .btn_close:focus {
+    background-color: transparent;
+    border-radius: 50%
+}
+
+.btn_close_white {
+    margin-bottom: 0;
+}
+
+.portfolio-img__btn {
+    margin: 0;
+}
+.hamburger {
+    display: none;
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-right: 0;
+    color: #ffe600;
+    height: 20px;
+    width: 28px;
+    position: relative;
+    background-color: transparent;
+
+}
+.hamburger::after,
+.hamburger::before{
+    position: absolute;
+    content: " ";
+    width: 28px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ffe600;
+    display: block;
+    transition: all 0.5s;
+    background-color: currentColor;
+
+}
+.hamburger:hover {
+    border-color: transparent;
+}
+.hamburger:hover::after {
+    transform: rotate(45deg);
+}
+.hamburger:hover::before {
+    transform: rotate(-45deg);
+}
+.hamburger:focus {
+    border-color: transparent;
+}
+.hamburger:focus::before {
+    transform: rotate(-45deg);
+}
+.hamburger:focus::after {
+    transform: rotate(45deg);
+}
